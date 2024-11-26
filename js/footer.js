@@ -6,9 +6,9 @@ class Footer extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 			<footer>
-				Contact
-				<br>
-				Carte
+				<p>Contact</p>
+				<p>Carte</p>
+				<p>Copyright</p>
 			</footer>
 		`;
 	}

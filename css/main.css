@@ -1,16 +1,8 @@
-/* Variables */
-:root {
-    --primary: rgb(9, 1, 43);
-    --primary-t: rgba(9, 1, 43, 0.5);
-    --secondary: rgb(96, 91, 241);
-    --secondary-t: rgba(96, 91, 241, 0.5);
-    --event: rgb(254, 138, 36);
-    --event-t: rgba(254, 138, 36, 0.5);
-    
-    --marge: 10px;
-    --hauteur-menu: 50px;
-    --hauteur-pied: 10vh;
-}
+/* Import : variables + responsive */
+@import "./variable.css";
+@import url("./mobile.css")   (max-width: 768px);
+@import url("./tablet.css")   (min-width: 769px) and (max-width: 991px);
+@import url("./desktop.css")  (min-width: 992px);
 
 /* Général */
 body {
@@ -39,7 +31,7 @@ li, li a {
     margin-top: var(--hauteur-menu);
 }
 
-/* Sections */
+/* Menu top */
 header {
     z-index: 10;
     position: fixed;
@@ -53,21 +45,22 @@ header {
         display: flex;
         flex-direction: row;
         list-style-type: none;
+        margin: auto;
+        padding: 5px;
     }
     li {
+        justify-self: center;
         width: calc(100% / 7);
-        a {
-            text-decoration: none;
-        }
+        a { text-decoration: none; }
     }
-    img {
-        max-height: 20px;
-    }
+    img { max-height: 20px; }
 }
 
+/* Sections */
 .hero {
     margin-top: var(--hauteur-menu);
     background-color: var(--secondary-t);
+    h1 { text-align: center; }
 }
 
 .activite {
@@ -77,4 +70,21 @@ header {
 .resa {
     text-align: center;
     background-color: var(--secondary-t);
+}
+
+/* Pied de page */
+footer {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--hauteur-pied);
+    background-color: var(--primary-t);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    p {
+        font-style: italic;
+        color: var(--primary);
+    }
 }

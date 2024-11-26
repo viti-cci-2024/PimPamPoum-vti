@@ -1,4 +1,31 @@
-img {
+/* Variables */
+:root {
+    --primary: rgb(9, 1, 43);
+    --primary-t: rgba(9, 1, 43, 0.5);
+    --secondary: rgb(96, 91, 241);
+    --secondary-t: rgba(96, 91, 241, 0.5);
+    --event: rgb(254, 138, 36);
+    --event-t: rgba(254, 138, 36, 0.5);
+    
+    --marge: 10px;
+    --hauteur-menu: 50px;
+    --hauteur-pied: 10vh;
+}
+
+/* Général */
+body {
+    margin: 0;
+    background-color: var(--secondary-t);
+}
+h1, h2, h3, p {
+    color: var(--primary)
+}
+li, li a {
+    color: var(--event);
+}
+
+/* Image de la page d'accueil */
+.img-accueil {
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -9,4 +36,45 @@ img {
     left: 0;
     right: 0;
     margin: auto;
+    margin-top: var(--hauteur-menu);
+}
+
+/* Sections */
+header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--hauteur-menu);
+    background-color: var(--primary-t);
+}
+.navbar {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    li {
+        width: calc(100% / 7);
+        a {
+            text-decoration: none;
+        }
+    }
+    img {
+        max-height: 20px;
+    }
+}
+
+.hero {
+    margin-top: var(--hauteur-menu);
+    background-color: var(--secondary-t);
+}
+
+.activite {
+    background-color: var(--secondary-t);
+}
+
+.resa {
+    text-align: center;
+    background-color: var(--secondary-t);
 }

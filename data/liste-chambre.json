@@ -1,0 +1,77 @@
+[
+    {
+        "id": "ME01",
+        "vue": "mer",
+        "capacite": "2"
+    },
+    {
+        "id": "ME02",
+        "vue": "mer",
+        "capacite": "2"
+    },
+    {
+        "id": "ME03",
+        "vue": "mer",
+        "capacite": "2"
+    },
+    {
+        "id": "ME04",
+        "vue": "mer",
+        "capacite": "2"
+    },
+    {
+        "id": "ME05",
+        "vue": "mer",
+        "capacite": "2"
+    },
+    {
+        "id": "JA01",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA02",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA03",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA04",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA05",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA06",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA07",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA08",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA09",
+        "vue": "jardin",
+        "capacite": "4"
+    },
+    {
+        "id": "JA10",
+        "vue": "jardin",
+        "capacite": "4"
+    }
+]

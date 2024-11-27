@@ -1,0 +1,47 @@
+.bg-primary {
+    background: linear-gradient(90deg, #09012bf8, #6460da);
+    color:azure;
+    padding-block: 0.5em;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+ 
+.btn-primary {
+    background-color: #605BF1;
+    border-color: #605BF1; 
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #09012B;
+    border-color: #09012B; 
+    color: whitesmoke;
+}
+
+.resa {
+    background: white
+}
+
+.hero {
+    height: 40ch;
+    background-image: url('../../public/children-1547261_1920.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    margin-block-start: 0vh;
+}
+.hero-resa {
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.border-info-subtle {
+    border-color : linear-gradient(90deg, #09012bf8, #6460da);
+}

@@ -13,7 +13,7 @@ class NavBar extends HTMLElement {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav fs-5">
         <li class="nav-item">
           <a class="nav-link text-white" href="../chambre/chambre-index.html">Nos chambres</a>
         </li>

@@ -20,18 +20,18 @@
     <div class="text-white text-start">
       <h1 class="mb-3 text-shadow">Bienvenue au restaurant Pim</h1>
       <h4 class="mb-3 text-shadow">Venez émerveiller vos papilles qui n’en reviendront pas.</h4>
-      <button type="button" class="btn-resto btn-lg fs-5">Réservez</button>
+      <button type="button" class="btn-resto btn-lg fs-5" onclick="window.location.href='repas-resa.html';">Réservez</button>
     </div>
   </div>
 </div>
 
 <!-- Bar -->
 <div>
-  <div class="container-flexbible">
+  <div class="container-fluid">
     <h1 class="ms-5 mt-5">Nos cocktails</h1>
     <h4 class="ms-5 mt-3">Avant le repas, venez profiter de notre bar</h4>
     <h4 class="ms-5">de sa large sélection de boissons avec ou sans alcool.</h4>
-    
+
     <div class="image-container position-relative">
       <img class="cocktail-image" src="img-resto/cocktail.png" alt="verre à cocktail">
       <img class="barimage ms-5 mt-4 rounded" src="img-resto/bar.webp" alt="bar du restaurant pim">
@@ -39,29 +39,91 @@
   </div>
 </div>
 
+
 <!-- Repas -->
 <div>
-  <div class="container-flexbible-repas">
-    <h1 class="ms-5 mt-5">Nos spécialités</h1>
-    
-    <!-- Conteneur pour les deux div côte à côte -->
-    <div class="specialites-container ms-5 mr-5 mb-5">
-      <div class="specialite-item meat" alt="viande">
-        <h1 class="mb-3 mt-5 ms-5 text-white">Côté terre</h1>
-        <h4 class="ms-5 me-5 text-white"> Notre sélection de délicieuses viandes va ravir le carnivore qui est en vous !</h4>
-        <button type="button" class="btn-resto btn-lg fs-5 ms-5">Réservez</button>
+  <div class="container-fluid mt-5">
+    <h1>Nos spécialités</h1>
+
+    <!-- Conteneur des spécialités avec espacement -->
+    <div class="row mt-4 mb-5 d-flex flex-column flex-md-row justify-content-around g-3"> <!-- g-3 pour espacement global -->
+      <!-- Section Côté Terre -->
+      <div class="specialite-item meat col-12 col-md-5 rounded">
+        <h1 class="ms-5 mb-3 mt-5  text-white text-shadow">Côté Terre</h1>
+        <h4 class="ms-5 me-5 text-white text-shadow">Notre sélection de délicieuses viandes va ravir le carnivore qui est en vous !</h4>
+        <button type="button" class="ms-5 btn-resto btn-lg fs-5" onclick="window.location.href='repas-resa.html';">Réservez</button>
       </div>
-      <div class="specialite-item seafood" alt="fruits de mer">
-        <h1 class="mb-3 mt-5 ms-5 text-white text-shadow">Côté Mer</h1>
-        <h4 class="ms-5 me-5 text-white text-shadow"> Vous aimez les embruns et le goût de l’iode !  Nos fruits de mer seront pour vous un véritable délice !  </h4>
-        <button type="button" class="btn-resto btn-lg fs-5 ms-5">Réservez</button>
+
+      <!-- Section Côté Mer -->
+      <div class="specialite-item seafood col-12 col-md-5 rounded">
+        <h1 class="ms-5 mb-3 mt-5  text-white text-shadow">Côté Mer</h1>
+        <h4 class="ms-5 me-5 text-white text-shadow">Vous aimez les embruns et le goût de l’iode ! Nos fruits de mer seront un délice !</h4>
+        <button type="button" class="ms-5 btn-resto btn-lg fs-5" onclick="window.location.href='repas-resa.html';">Réservez</button>
       </div>
     </div>
   </div>
 </div>
 
 
-
+<!-- témoignages-->
+<section class="testimonial py-5 bg-light">
+  <div class="container">
+      <h2 class="text-center mb-5">Nos clients ont adoré</h2>
+      <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="img-resto/avatar1.png" class="rounded-circle mb-3" alt="Client Avatar">
+                      <h5 class="card-title">Billy Gaytes</h5>
+                      <p class="card-text text-muted">USA, Chicago</p>
+                      <p class="card-text">Une très bonne sélection de grands vins pour accompagner une viande savoureuse !"</p>
+                      <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="img-resto/avatar2.png" class="rounded-circle mb-3" alt="Client Avatar">
+                      <h5 class="card-title">Elsa Gorithme</h5>
+                      <p class="card-text text-muted">France, Nice</p>
+                      <p class="card-text">"Le personnel était au top et la qualité des produits de la mer est exceptionnelle !"</p>
+                      <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="img-resto/avatar3.png" class="rounded-circle mb-3" alt="Client Avatar">
+                      <h5 class="card-title">Olivia Jax</h5>
+                      <p class="card-text text-muted">Vanuatu, Port-Vila</p>
+                      <p class="card-text">"Incroyable site et le restaurant était merveilleux. Quels plats délicieux !"</p>
+                      <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 

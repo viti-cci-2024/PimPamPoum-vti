@@ -1,0 +1,12 @@
+.btn-chambre {
+    background-color: #fe8a24;
+    border: none;
+    border-radius: 80px;
+}
+
+.btn-chambre-2 {
+    background-color: #605bf1;
+    border: none;
+    border-radius: 80px;
+    font-size: 0.9rem;
+}

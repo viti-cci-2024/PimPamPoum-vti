@@ -76,3 +76,59 @@ header {
 }
 
 
+/* HERO */
+
+.text-shadow {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  }
+
+.main-hero {
+    background-image: url('../public/hero-main.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 70vh;
+}
+
+.sep-main {
+    background-image: url('../public/cta.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 30vh;
+}
+
+.btn-main {
+    background-color: #FE8A24; 
+    padding: 20px 40px; 
+    border-radius: 80px; 
+    color: white; 
+    font-size: 1rem; 
+    border: none; 
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .btn-main:hover {
+    background-color: #09012B; 
+    color: white; 
+    transform: scale(1.1); 
+  }
+
+/* BUNGALOWS */
+
+  
+  .bungjar-main {
+    background-image: url('../modules/chambre/galerie/Bungalow-Jardin-01.png'); 
+    background-size: cover; /* Affiche l'image en entier */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-position: center; /* Centre l'image dans le bloc */
+  }
+  
+  .bungsea-main {
+    background-image: url('../modules/chambre/galerie/Bungalow-Mer-01.png'); 
+    background-size: cover; /* Affiche l'image en entier */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-position: center; /* Centre l'image dans le bloc */
+  }
+
+  .main-item {
+    height: 60vh;
+}

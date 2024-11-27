@@ -10,7 +10,7 @@ class Footer extends HTMLElement {
                     <div class="row">
                         <!-- Colonne 1 : Logo et description -->
                         <div class="col-md-3 mb-4">
-                            <img src="../../public/logo-gite-BLANC.png" alt="Logo Gîte Pim" width="200" class="mb-3">
+                            <img src="./public/logo-gite-BLANC.png" alt="Logo Gîte Pim" width="200" class="mb-3">
                              <h6 class="text-uppercase fw-bold text-white mb-3">Contact</h6>
                             <p class="text-white"><i class="bi bi-geo-alt-fill me-2"></i> Îlot Pam, Poum</p>
                             <p class="text-white"><i class="bi bi-telephone-fill me-2"></i> +687 12 34 56</p>
@@ -21,9 +21,9 @@ class Footer extends HTMLElement {
                         <div class="col-md-3 mb-4">
                             <h6 class="text-uppercase fw-bold text-white mb-3">Navigation</h6>
                             <ul class="list-unstyled">
-                                <li><a href="../../index.html" class="text-white text-decoration-none">Accueil</a></li>
-                                <li><a href="../chambre/chambre-index.html" class="text-white text-decoration-none">Nos chambres</a></li>
-                                <li><a href="../repas/repas-index.html" class="text-white text-decoration-none">Notre restaurant</a></li>
+                                <li><a href="./index.html" class="text-white text-decoration-none">Accueil</a></li>
+                                <li><a href="./modules/chambre/chambre-index.html" class="text-white text-decoration-none">Nos chambres</a></li>
+                                <li><a href="./modules/repas/repas-index.html" class="text-white text-decoration-none">Notre restaurant</a></li>
                                 
                                 <li><a href="./modules/garderie/garderie-index.html" class="text-white text-decoration-none">La garderie</a></li></br></br>
                             </ul>
@@ -31,19 +31,19 @@ class Footer extends HTMLElement {
                       
                             <h6 class="text-uppercase fw-bold text-white mb-3">Activité</h6>
                             <ul class="list-unstyled">
-                                <li><a href="../cheval/cheval-index.html" class="text-white text-decoration-none">Randonnée équestre</a></li>
-                                <li><a href="../kayak/kayak-index.html" class="text-white text-decoration-none">Sortie en kayak</a></li>
-                                <li><a href="../bagne/bagne-index.html" class="text-white text-decoration-none">Visite du bagne</a></li>
+                                <li><a href="./modules/cheval/cheval-index.html" class="text-white text-decoration-none">Randonnée équestre</a></li>
+                                <li><a href="./modules/kayak/kayak-index.html" class="text-white text-decoration-none">Sortie en kayak</a></li>
+                                <li><a href="./modules/bagne/bagne-index.html" class="text-white text-decoration-none">Visite du bagne</a></li>
                             </ul>
                         </div>
                         <!-- Colonne 3 : Contact et réseaux sociaux -->
                         <div class="col-md-3 mb-4">
-                        <img src="../../public/cartepim.png" alt="lieux Gîte Pim" width="300" class="mb-3">
+                        <img src="./public/cartepim.png" alt="lieux Gîte Pim" width="300" class="mb-3">
                            <h6 class="text-uppercase fw-bold text-white mt-4">Suivez-nous</h6>
                             <div>
-                                <a href="#" class="text-white me-3"><img src="../../public/facebook.png" alt="Facebook" width="24"></a>
-                                <a href="#" class="text-white me-3"><img src="../../public/instagram.png" alt="Instagram" width="24"></a>
-                                <a href="#" class="text-white"><img src="../../public/twitter.png" alt="Twitter" width="24"></a>
+                                <a href="#" class="text-white me-3"><img src="./public/facebook.png" alt="Facebook" width="24"></a>
+                                <a href="#" class="text-white me-3"><img src="./public/instagram.png" alt="Instagram" width="24"></a>
+                                <a href="#" class="text-white"><img src="./public/twitter.png" alt="Twitter" width="24"></a>
                             </div>
                         </div>
                     </div>

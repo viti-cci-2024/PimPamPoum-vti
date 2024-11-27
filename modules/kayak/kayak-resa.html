@@ -14,10 +14,53 @@
 		<menu-top></menu-top>
 
 		<!-- HERO -->
-		<section class="hero"><h1>KAYAK</h1></section>
+		<section class="hero">
+			<h1>KAYAK</h1>
+			<span style="visibility: hidden;"><a class="btn" href="#" role="button"></a></span>
+		</section>
 
 		<!-- Réservation -->
 		<h4>Réservation d'une sortie en kayak</h4>
+		<section class="formulaire">
+			<form>
+				<!--
+					Le client doit être connecté (via son numéro de chambre)
+					Vérification automatique des conflits
+					Message (toast) pour les retours (erreur / confirmation)
+				-->
+				<div class="form-group">
+					<label for="ChoixJour">Jour de la sortie</label>
+					<input type="number" class="form-control" id="ChoixJour" placeholder="15" min="1" max="31">
+				</div>
+				<div class="form-group">
+					<label for="ChoixHeureDebut">Heure de début</label>
+					<input type="number" class="form-control" id="ChoixHeureDebut" placeholder="9" min="9" max="15">
+				</div>
+				<div class="form-group">
+					<label for="ChoixHeureFin">Heure de fin</label>
+					<input type="number" class="form-control" id="ChoixHeureFin" placeholder="10" min="10" max="16">
+				</div>
+
+
+				<div class="form-group">
+					<label for="ChoixPersonne">Nombre de personnes</label>
+					<select class="form-control" id="ChoixPersonne">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="ChoixKayakSimple" value="option1" checked>
+					<label class="form-check-label" for="ChoixKayakSimple">Kayak simple</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="ChoixKayakDouble" value="option2">
+					<label class="form-check-label" for="ChoixKayakDouble">Kayak double</label>
+				</div>
+			</form>
+		</section>
 		<section class="resa">
 			<a class="btn btn-danger"  role="button" href="./kayak-index.html">Annuler</a>
 			<a class="btn btn-success" role="button" href="#">Réserver</a>

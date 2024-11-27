@@ -10,7 +10,7 @@
 /* Général */
 body {
     margin: 0;
-    background-color: var(--secondary-t);
+    font-family: 'Roboto', sans-serif;
 }
 h1, h2, h3, p {
     color: var(--primary);
@@ -62,17 +62,17 @@ header {
 /* Sections */
 .hero {
     margin-top: var(--hauteur-menu);
-    background-color: var(--secondary-t);
+    background-color: transparent;
     h1 { text-align: center; }
 }
 
 .activite {
-    background-color: var(--secondary-t);
+    background-color: transparent;
 }
 
 .resa {
     text-align: center;
-    background-color: var(--secondary-t);
+    background-color: transparent;
 }
 
 

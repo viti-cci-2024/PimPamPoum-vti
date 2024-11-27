@@ -11,7 +11,7 @@ body {
     background-color: var(--secondary-t);
 }
 h1, h2, h3, p {
-    color: var(--primary)
+    color: var(--primary);
 }
 li, li a {
     color: white;
@@ -71,21 +71,4 @@ header {
 .resa {
     text-align: center;
     background-color: var(--secondary-t);
-}
-
-/* Pied de page */
-footer {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: var(--hauteur-pied);
-    background-color: var(--primary-t);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    p {
-        font-style: italic;
-        color: var(--primary);
-    }
 }

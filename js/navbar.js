@@ -1,4 +1,3 @@
-// Surcharge d'un élément HTML.
 class NavBar extends HTMLElement {
 	constructor() {
 		super();
@@ -42,5 +41,5 @@ class NavBar extends HTMLElement {
 	}
 }
 
-// On définit la balise avec la classe.
+// Enregistrement de la balise personnalisée
 customElements.define('menu-top', NavBar);

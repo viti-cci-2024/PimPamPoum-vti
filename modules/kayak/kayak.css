@@ -1,0 +1,119 @@
+@import "./../../css/main.css";
+@import url("https://unpkg.com/flickity@2/dist/flickity.min.css");
+
+/* Commun */
+body {
+    background-color: transparent;
+}
+h4 {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+    border: 1px solid var(--primary);
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 200px;
+}
+
+/* Bannière HERO */
+.hero {
+    background-image: url("./banniere.png");
+    min-height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-weight: bold;
+        padding-left: 20%;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 0;
+        color: var(--primary);
+    }
+    span {
+        padding-left: 20%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Section activité */
+.activite {
+    width: calc(100% - 40px);
+    margin: auto;
+    background-color: transparent;
+}
+
+/* Présentation de l'activité */
+#presentation {
+    * { color: var(--primary); }
+    ul {
+        width: fit-content;
+        margin: auto;
+        font-weight: bold;
+        font-style: italic;
+    }
+    div {
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 20px;
+        max-height: 30vh;
+        overflow-y: auto;
+    }
+}
+
+/* Carousel */
+#galerie-kayak {
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .carousel {
+        background: transparent;
+        text-align: center;
+        height: 50vh;
+        margin: 15px 0 35px;
+    }
+    .panneau {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        counter-increment: panneau;
+        border-radius: 20px;
+    }
+    img { height: 100%; }
+    .carousel.is-fullscreen .panneau { height: 100%; }
+}
+
+/* Consigne de sécurité */
+#securite img {
+    width: 100%;
+}
+
+/* Section réservation */
+.resa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    background-color: transparent;
+}
+
+/* Bouton "call to action" */
+.hero, .resa {
+    .btn {
+        background-color: var(--primary);
+        color: white;
+    }
+    .btn:hover {
+        background-color: var(--event);
+        color: var(--primary);
+    }
+}

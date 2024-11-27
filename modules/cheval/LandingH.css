@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh; /* Prend toute la hauteur de la fenêtre */
+    position: relative;
+    background-image: url('hero001-8894.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent */
+    z-index: 1;
+}
+
+.hero-content {
+    margin-top: 0px; /* Ajustez la valeur selon vos besoins */
+    position: relative;
+    top: 100%;
+    right: 10%;
+    transform: translate(-50%);
+    text-align: right;
+
+    color: white;
+    z-index: 2;
+    
+}
+
+.hero2 {
+    width: 100%;
+    height: 70vh; /* Prend toute la hauteur de la fenêtre */
+    position: relative;
+    background-image: url('herofooter2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero2-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent */
+    z-index: 1;
+}
+
+.hero-content {
+    margin-top: 0px; /* Ajustez la valeur selon vos besoins */
+    position: relative;
+    top: 100%;
+    left: 10%;
+    transform: translate(-50%);
+    text-align: left;
+
+    color: white;
+    z-index: 2;
+    
+}
+
+.text-right {
+    margin-top: 100px; /* Ajustez la valeur selon vos besoins */
+    font-size: 3rem; /* Taille similaire à un h1 */
+    color: white; /* Texte en blanc */
+    text-align: right; /* Aligne le texte à gauche */
+    font-weight: bold; /* Pour donner un effet similaire à un <h1> */
+
+}
+
+.btn-secondary-custom {
+    background-color: #FE8A24 !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #d77a1f !important; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Plus petit sur mobile */
+    }
+}
+
+.presentation {
+    background-color: #f8f9fa; /* Fond légèrement grisé */
+    padding: 3rem 0;
+}
+
+.presentation-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+}
+
+.presentation h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.presentation p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .presentation {
+        padding: 2rem 0;
+    }
+    
+    .description-box {
+        padding: 1.5rem;
+    }
+    
+    .presentation p {
+        font-size: 1rem;
+    }
+}
+
+.guide-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.guide-img {
+    flex: 0 0 200px; /* Réduit de 400px à 200px */
+}
+
+.guide-img img {
+    width: 100%;
+    height: 300px; /* Réduit de 300px à 150px */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+}
+
+.guide-content {
+    flex: 1;
+    padding: 1.5rem; /* Légèrement réduit pour être proportionnel */
+}
+
+/* Ajustement responsive */
+@media (max-width: 991.98px) {
+    .guide-img {
+        flex: 0 0 150px; /* Encore plus petit en mobile */
+    }
+    
+    .guide-img img {
+        height: 120px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .guide-row, 
+    .guide-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guide-img {
+        flex: 0 0 100%;
+    }
+}
+.resa {
+    background-color: rgba(88, 82, 222, 0.13); /* Couleur 5852DE à 13% d'opacité comme sur le figma*/
+    padding: 50px 0; 
+}

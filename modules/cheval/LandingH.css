@@ -1,56 +1,62 @@
+/* Variables globales */
+:root {
+    --primary: #09012B;
+    --secondary: #605BF1;
+    --event: #FE8A24;
+}
+
+/* Styles de base */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Hero sections */
 .hero {
     width: 100%;
-    height: 90vh; /* Prend toute la hauteur de la fenêtre */
+    height: 70vh;
     position: relative;
     background-image: url('hero001-8894.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
-.hero1::before{
+
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-.hero-content {
-    margin-top: 0px; /* Ajustez la valeur selon vos besoins */
-    position: relative;
-    top: 100%;
-    right: 10%;
-    transform: translate(-50%);
-    text-align: right;
-
+.text-center {
+    margin-right: 10%;
+    font-size: 3rem;
     color: white;
+    text-align: right;
+    font-weight: bold;
     z-index: 2;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero2 {
     width: 100%;
-    height: 70vh; /* Prend toute la hauteur de la fenêtre */
+    height: 70vh;
     position: relative;
     background-image: url('herofooter2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.hero2-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .hero2::before {
@@ -60,51 +66,44 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-.hero-content {
-    margin-top: 0px; /* Ajustez la valeur selon vos besoins */
-    position: relative;
-    top: 100%;
-    left: 10%;
-    transform: translate(-50%);
-    text-align: left;
-
-    color: white;
-    z-index: 2;
-    
-}
-
-.text-right {
-    margin-top: 100px; /* Ajustez la valeur selon vos besoins */
-    font-size: 3rem; /* Taille similaire à un h1 */
-    color: white; /* Texte en blanc */
-    text-align: right; /* Aligne le texte à gauche */
-    font-weight: bold; /* Pour donner un effet similaire à un <h1> */
-
-}
-
+/* Boutons */
 .btn-secondary-custom {
     background-color: #FE8A24 !important;
     color: white !important;
     border: none;
+    z-index: 2;
+}
+
+/* Style spécifique pour le bouton du hero du haut */
+.hero .btn-secondary-custom {
+    margin-top: 20px;
+    margin-right: 10%;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+}
+
+/* Style spécifique pour le bouton du hero du bas */
+.hero2 .btn-secondary-custom {
+    margin-bottom: 80px; /* Remonté de 50px à 80px */
+    padding: 15px 40px; /* Agrandi */
+    font-size: 1.5rem; /* Plus gros texte */
+    font-weight: bold; /* Plus gras */
+    text-transform: uppercase; /* Option: met le texte en majuscules */
 }
 
 .btn-secondary-custom:hover {
-    background-color: #d77a1f !important; 
+    background-color: #d77a1f !important;
+    transform: scale(1.05); /* Léger effet d'agrandissement au hover */
+    transition: all 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        height: 60vh; /* Plus petit sur mobile */
-    }
-}
-
+/* Section présentation */
 .presentation {
-    background-color: #f8f9fa; /* Fond légèrement grisé */
+    background-color: #f8f9fa;
     padding: 3rem 0;
 }
 
@@ -133,21 +132,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .presentation {
-        padding: 2rem 0;
-    }
-    
-    .description-box {
-        padding: 1.5rem;
-    }
-    
-    .presentation p {
-        font-size: 1rem;
-    }
-}
-
+/* Section guides */
 .guide-row {
     display: flex;
     align-items: center;
@@ -163,31 +148,27 @@ body {
 }
 
 .guide-img {
-    flex: 0 0 200px; /* Réduit de 400px à 200px */
+    flex: 0 0 200px;
 }
 
 .guide-img img {
     width: 100%;
-    height: 300px; /* Réduit de 300px à 150px */
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+    transition: all 0.3s ease;
 }
 
 .guide-content {
     flex: 1;
-    padding: 1.5rem; /* Légèrement réduit pour être proportionnel */
+    padding: 1.5rem;
 }
 
-/* Ajustement responsive */
-@media (max-width: 991.98px) {
-    .guide-img {
-        flex: 0 0 150px; /* Encore plus petit en mobile */
-    }
-    
-    .guide-img img {
-        height: 120px;
-    }
+/* Section réservation */
+.resa {
+    background-color: rgba(88, 82, 222, 0.13);
+    padding: 50px 0;
 }
 
 /* Responsive */
@@ -200,9 +181,71 @@ body {
 
     .guide-img {
         flex: 0 0 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .guide-img img {
+        height: 500px;
+    }
+
+    .hero2 .btn-secondary-custom {
+        margin-bottom: 60px; /* Légèrement ajusté pour tablette */
+        padding: 12px 35px;
+        font-size: 1.3rem;
     }
 }
-.resa {
-    background-color: rgba(88, 82, 222, 0.13); /* Couleur 5852DE à 13% d'opacité comme sur le figma*/
-    padding: 50px 0; 
+
+@media (max-width: 768px) {
+    .hero,
+    .hero2 {
+        height: 60vh;
+    }
+
+    .text-center {
+        font-size: 2rem;
+        margin-right: 5%;
+    }
+
+    .hero .btn-secondary-custom {
+        margin-right: 5%;
+        padding: 8px 25px;
+        font-size: 1.1rem;
+    }
+
+    .hero2 .btn-secondary-custom {
+        margin-bottom: 40px;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .presentation {
+        padding: 2rem 0;
+    }
+    
+    .description-box {
+        padding: 1.5rem;
+    }
+    
+    .presentation p {
+        font-size: 1rem;
+    }
+
+    .guide-img {
+        max-width: 100%;
+    }
+    
+    .guide-img img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .guide-img img {
+        height: 350px;
+    }
+    
+    .guide-content {
+        padding: 1rem;
+    }
 }

@@ -15,22 +15,22 @@ class NavBar extends HTMLElement {
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/chambre/chambre-index.html">Nos chambres</a>
+          <a class="nav-link text-white" href="../chambre/chambre-index.html">Nos chambres</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/repas/repas-index.html">Notre restaurant</a>
+          <a class="nav-link text-white" href="../repas/repas-index.html">Notre restaurant</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/cheval/cheval-index.html">Randonnée équestre</a>
+          <a class="nav-link text-white" href="../cheval/cheval-index.html">Randonnée équestre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/kayak/kayak-index.html">Sortie en kayak</a>
+          <a class="nav-link text-white" href="../kayak/kayak-index.html">Sortie en kayak</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/bagne/bagne-index.html">Visite du bagne</a>
+          <a class="nav-link text-white" href="../bagne/bagne-index.html">Visite du bagne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./modules/garderie/garderie-index.html">La garderie</a>
+          <a class="nav-link text-white" href="../garderie/garderie-index.html">La garderie</a>
         </li>
       </ul>
     </div>

@@ -13,10 +13,26 @@ h1, h2, h3, p {
     color: var(--primary);
 }
 li, li a {
-    color: var(--event);
+    color: white;
+}
+button {
+    border: 1px solid var(--primary);
+    border-radius: 80px;
+    color: white;
+    background-color: var(--primary);
+}
+button:hover {
+    color: var(--primary);
+    background-color: var(--event);
 }
 
 /* Image de la page d'accueil */
+main {
+    margin-top: var(--hauteur-menu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-accueil {
     max-height: 100%;
     max-width: 100%;
@@ -28,7 +44,6 @@ li, li a {
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: var(--hauteur-menu);
 }
 
 /* Menu top */
@@ -53,6 +68,7 @@ header {
         width: calc(100% / 7);
         a { text-decoration: none; }
     }
+    li:has(img) { text-align: center; }
     img { max-height: 20px; }
 }
 

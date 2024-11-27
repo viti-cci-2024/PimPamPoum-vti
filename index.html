@@ -42,32 +42,237 @@
       </div>
     </div>
 
-<!-- Bungalows -->
-<div>
-    <div class="container-fluid mt-5">
-      <h1>Nos bungalows</h1>
-  
-      <!-- Conteneur des spécialités avec espacement -->
-      <div class="row mt-4 mb-5 d-flex flex-column flex-md-row justify-content-around g-3">
-        <!-- Bungalows jardin -->
-        <div class="main-item bungjar-main col-12 col-md-5 rounded">
-          <h1 class="ms-5 mb-3 mt-5  text-white text-shadow">Bungalow Jardin</h1>
-          <h4 class="ms-5 me-5 text-white text-shadow">Spacieux et confortables dans un cadre de verdoyant !</h4>
-          <button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='modules/chambre/chambre-index.html';">Réservez</button>
-        </div>
-  
-        <!-- Section Côté Mer -->
-        <div class="main-item bungsea-main col-12 col-md-5 rounded">
-          <h1 class="ms-5 mb-3 mt-5  text-white text-shadow">Bungalow Vue Mer</h1>
-          <h4 class="ms-5 me-5 text-white text-shadow">Laissez vous bercer par le son des vagues sur la terrasse</h4>
-          <button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='modules/chambre/chambre-index.html';">Réservez</button>
+    <!-- Bungalows -->
+    <div>
+      <div class="container-fluid mt-5">
+        <h1>Nos bungalows</h1>
+
+        <!-- Conteneur des spécialités avec espacement -->
+        <div
+          class="row mt-4 mb-5 d-flex flex-column flex-md-row justify-content-around g-3"
+        >
+          <!-- Bungalows jardin -->
+          <div class="main-item bungjar-main col-12 col-md-5 rounded">
+            <h1 class="ms-5 mb-3 mt-5 text-white text-shadow">
+              Bungalow Jardin
+            </h1>
+            <h4 class="ms-5 me-5 text-white text-shadow">
+              Spacieux et confortables dans un cadre de verdoyant !
+            </h4>
+            <button
+              type="button"
+              class="ms-5 btn-main btn-lg fs-5"
+              onclick="window.location.href='modules/chambre/chambre-index.html';"
+            >
+              Réservez
+            </button>
+          </div>
+
+          <!-- Section Côté Mer -->
+          <div class="main-item bungsea-main col-12 col-md-5 rounded">
+            <h1 class="ms-5 mb-3 mt-5 text-white text-shadow">
+              Bungalow Vue Mer
+            </h1>
+            <h4 class="ms-5 me-5 text-white text-shadow">
+              Laissez vous bercer par le son des vagues sur la terrasse
+            </h4>
+            <button
+              type="button"
+              class="ms-5 btn-main btn-lg fs-5"
+              onclick="window.location.href='modules/chambre/chambre-index.html';"
+            >
+              Réservez
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- CAROUSEL ACTIVITES !-->
 
-
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h3 class="mb-3">Nos activités</h3>
+          </div>
+          <div class="col-6 text-end">
+            <button
+              class="btn btn-primary mb-3 me-1"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </button>
+            <button
+              class="btn btn-warning mb-3"
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-bagne.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Visite du bagne</h4>
+                          <p class="card-text">
+                            Replongez avec notre guide dans l'histoire du pays
+                            sur l'île de Pam
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/bagne/bagne-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-cheval.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Randonnée équestre</h4>
+                          <p class="card-text">
+                            De belles balades dans la nature avec notre guide. A
+                            ne pas manquer !
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/cheval/cheval-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-gard.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Notre garderie</h4>
+                          <p class="card-text">
+                            Afin de réaliser les activités non accessibles aux
+                            enfants, confiez-nous vos enfants
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/garderie/garderie-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-kayak.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Club nautique</h4>
+                          <p class="card-text">
+                            Balades détente ou sportive en kayak sur le lagon.
+                            Détente ou actif, à vous de choisir !
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/kayak/kayak-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-repas.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Restaurant Pim</h4>
+                          <p class="card-text">
+                            Pour les gourmets et les gourmands, notre carte
+                            saura vous ravir !
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/repas/repas-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="public/carou-bung.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Nos bungalows</h4>
+                          <p class="card-text">
+                            Jardin ou vue mer, choisissez votre bungalow idéal
+                            pour votre séjour
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-main-small btn-lg fs-6"
+                            onclick="window.location.href='modules/chambre/chambre-index.html';"
+                          >
+                            Réservez
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Séparation-->
     <div class="sep-main p-5 text-center bg-image rounded-3 my-5">

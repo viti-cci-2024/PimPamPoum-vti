@@ -132,3 +132,20 @@ header {
   .main-item {
     height: 60vh;
 }
+
+/* CAROUSEL */
+.btn-main-small {
+    background-color: #FE8A24; 
+    padding: 4px 15px; 
+    border-radius: 80px; 
+    color: white; 
+    font-size: 0.3rem; 
+    border: none; 
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .btn-main-small:hover {
+    background-color: #09012B; 
+    color: white; 
+    transform: scale(1.1); 
+  }

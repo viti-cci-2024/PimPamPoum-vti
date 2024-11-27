@@ -1,0 +1,41 @@
+.hero-text-bg {
+    background: linear-gradient(90deg, #09012bf8, #6460da);
+    color:azure;
+    padding-block: 0.5em;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.btn-primary {
+    background-color: #605BF1;
+    border-color: #605BF1; 
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #09012B;
+    border-color: #09012B; 
+    color: whitesmoke;
+}
+
+.resa {
+    background: white
+}
+
+.hero {
+    min-height: 50vh;
+    background-position: center;
+}
+.{
+    position: absolute;
+    z-index: 120;
+    top: 135vh;
+    left:35vh;
+    width: 40%; 
+    height: 60vh; 
+    object-fit: overflow;
+}

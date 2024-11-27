@@ -72,10 +72,12 @@ body {
 
 /* Boutons */
 .btn-secondary-custom {
+    text-decoration: none;
+    display: inline-block;
     background-color: #FE8A24 !important;
     color: white !important;
     border: none;
-    z-index: 2;
+    transition: all 0.3s ease;
 }
 
 /* Style spécifique pour le bouton du hero du haut */
@@ -84,21 +86,27 @@ body {
     margin-right: 10%;
     padding: 10px 30px;
     font-size: 1.25rem;
+    z-index: 2;
 }
 
 /* Style spécifique pour le bouton du hero du bas */
 .hero2 .btn-secondary-custom {
-    margin-bottom: 80px; /* Remonté de 50px à 80px */
-    padding: 15px 40px; /* Agrandi */
-    font-size: 1.5rem; /* Plus gros texte */
-    font-weight: bold; /* Plus gras */
-    text-transform: uppercase; /* Option: met le texte en majuscules */
+    margin-bottom: 80px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
 .btn-secondary-custom:hover {
     background-color: #d77a1f !important;
-    transform: scale(1.05); /* Léger effet d'agrandissement au hover */
-    transition: all 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(254, 138, 36, 0.3);
+}
+
+.btn-secondary-custom:active {
+    transform: scale(0.95);
 }
 
 /* Section présentation */
@@ -171,6 +179,27 @@ body {
     padding: 50px 0;
 }
 
+/* Conditions list */
+.conditions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.conditions-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.conditions-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--event);
+}
+
 /* Responsive */
 @media (max-width: 991.98px) {
     .guide-row, 
@@ -190,7 +219,7 @@ body {
     }
 
     .hero2 .btn-secondary-custom {
-        margin-bottom: 60px; /* Légèrement ajusté pour tablette */
+        margin-bottom: 60px;
         padding: 12px 35px;
         font-size: 1.3rem;
     }

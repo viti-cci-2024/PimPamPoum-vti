@@ -1,0 +1,282 @@
+/* Variables globales */
+:root {
+    --primary: #09012B;
+    --secondary: #605BF1;
+    --event: #FE8A24;
+}
+
+/* Styles de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero2 {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: url('herofooter2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} 
+
+/* Section réservation */
+.reservation {
+    padding: 3rem 0;
+}
+
+.reservation h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Formulaire */
+.reservation-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.2rem rgba(96, 91, 241, 0.25);
+}
+
+/* Style pour le champ de cheval sélectionné */
+#selected-horse {
+    background-color: #f8f9fa;
+    cursor: default;
+}
+
+/* Style pour le numéro de réservation */
+#reservation-number {
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+/* Bouton */
+.btn-secondary-custom {
+    background-color: #FE8A24 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #d77a1f !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(254, 138, 36, 0.3);
+}
+
+/* Calendrier */
+.calendar-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+}
+
+/* Toast Météo */
+.toast-container {
+    z-index: 1050;
+}
+
+.toast {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+}
+
+.toast-header {
+    background-color: var(--secondary);
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.toast-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Section chevaux */
+.horses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.horse-card {
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.horse-card:hover {
+    transform: translateY(-5px);
+}
+
+.horse-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 1, 43, 0.1);
+    transition: all 0.3s ease;
+}
+
+.horse-card p {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+/* Style pour la carte sélectionnée */
+.horse-card.selected {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(254, 138, 36, 0.3);
+}
+
+.horse-card.selected img {
+    border: 3px solid var(--event);
+}
+
+.horse-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--event);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .horses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .horse-card img {
+        height: 300px;
+    }
+    
+    .reservation-form,
+    .calendar-container {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .horses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .horse-card img {
+        height: 200px;
+    }
+
+    .reservation {
+        padding: 2rem 0;
+    }
+
+    .reservation-form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .horses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+    }
+
+    .horse-card img {
+        height: 180px;
+    }
+
+    .horse-card p {
+        font-size: 1rem;
+    }
+
+    .reservation-form,
+    .calendar-container {
+        padding: 1rem;
+    }
+}
+
+/* Animation pour le chargement des images */
+.horse-card img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles pour la météo */
+.meteo-content {
+    padding: 10px;
+}
+
+.meteo-icon {
+    font-size: 2rem;
+}
+
+.alert {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-color: rgba(255, 193, 7, 0.2);
+    color: #856404;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-color: rgba(40, 167, 69, 0.2);
+    color: #155724;
+}

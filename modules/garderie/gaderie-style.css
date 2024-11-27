@@ -18,8 +18,20 @@
 }
 
 .btn-primary:hover {
-    background-color: #09012B;
-    border-color: #09012B; 
+    background-color: #FE8A24;
+    border-color: #FE8A24; 
+    color: whitesmoke;
+}
+
+.btn-warning {
+    background-color: #d85619;
+    border-color: #d85619; 
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #09012bf8;
+    border-color: #09012bf8; 
     color: whitesmoke;
 }
 
@@ -42,6 +54,11 @@
     background-color: transparent;
 }
 
+.been-race {
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .border-info-subtle {
     border-color : linear-gradient(90deg, #09012bf8, #6460da);
 }

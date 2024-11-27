@@ -1,0 +1,48 @@
+.footer {
+  background-color: #1d1b4d;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer .row > div {
+  margin-bottom: 20px;
+}
+
+.footer .logo-icon {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ffc107; /* Jaune clair au survol */
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .footer .row > div {
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}

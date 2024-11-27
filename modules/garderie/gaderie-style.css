@@ -1,0 +1,27 @@
+.hero-text-bg {
+    background: linear-gradient(90deg, #09012bf8, #6460da);
+    color:azure;
+    padding-block: 0.5em;
+}
+
+.card-img-top {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: 200px; /* Hauteur uniforme */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+}
+
+.btn-primary {
+    background-color: #605BF1;
+    border-color: #605BF1; 
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #09012B;
+    border-color: #09012B; 
+    color: whitesmoke;
+}
+
+.resa {
+    background: white
+}

@@ -1,4 +1,8 @@
 /* RESTO CSS */
+.text-shadow {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
 .resto-hero {
     background-image: url('../modules/repas/img-resto/pim-resto-hero.jpg'); 
     background-size: cover; 
@@ -49,3 +53,33 @@
     height: auto;
   }
   
+  /* Repas */
+.steakimage {
+  display: block;
+  width: 95%; /* L'image bar prendra toute la largeur du conteneur */
+  height: 50vh;
+  object-fit: cover;
+}
+
+.specialites-container {
+  display: flex; /* Affiche les div côte à côte */
+  justify-content: space-between; /* Espacement égal entre les deux div */
+  width: 95%;
+}
+
+.specialite-item {
+  width: 48%; /* Chaque div occupe 48% de la largeur du conteneur */
+  height: 50vh; /* Hauteur de 50vh pour chaque div */
+  background-size: cover; /* S'assure que l'image couvre toute la div */
+  background-position: center; /* Centre l'image dans la div */
+  border-radius: 8px; /* Optionnel : pour arrondir les coins */
+}
+
+.meat {
+  background-image: url('../modules/repas/img-resto//meat.jpg'); /* Image pour la viande */
+}
+
+.seafood {
+  background-image: url('../modules/repas/img-resto//fruits-de-mer-pim.jpeg'); /* Image pour les fruits de mer */
+}
+

@@ -3,6 +3,7 @@
 @import url("./mobile.css")   (max-width: 768px);
 @import url("./tablet.css")   (min-width: 769px) and (max-width: 991px);
 @import url("./desktop.css")  (min-width: 992px);
+@import url("./navbar.css");
 
 /* Général */
 body {
@@ -54,22 +55,6 @@ header {
     width: 100%;
     height: var(--hauteur-menu);
     background-color: var(--primary-t);
-}
-.navbar {
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin: auto;
-        padding: 5px;
-    }
-    li {
-        justify-self: center;
-        width: calc(100% / 7);
-        a { text-decoration: none; }
-    }
-    li:has(img) { text-align: center; }
-    img { max-height: 20px; }
 }
 
 /* Sections */

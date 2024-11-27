@@ -1,0 +1,51 @@
+/* RESTO CSS */
+.resto-hero {
+    background-image: url('../modules/repas/img-resto/pim-resto-hero.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 70vh;
+}
+
+.resto-bar {
+    background-image: url('../modules/repas/img-resto/bar.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 70vh;
+}
+
+.btn-resto {
+    background-color: #FE8A24; /* Fond orange */
+    padding: 20px 40px; /* Padding de 20px en haut/bas et 40px à gauche/droite */
+    border-radius: 80px; /* Bord arrondi à 80px */
+    color: white; /* Texte blanc */
+    font-size: 1rem; /* Taille du texte (peut être ajustée selon votre besoin) */
+    border: none; /* Enlever la bordure par défaut */
+    transition: all 0.3s ease-in-out; /* Animation pour le hover */
+  }
+  
+  .btn-resto:hover {
+    background-color: #09012B; /* Couleur de fond au survol (hover) */
+    color: white; /* Texte blanc au survol */
+    transform: scale(1.1); /* Faire grossir légèrement le bouton au survol */
+  }
+
+  .image-container {
+    position: relative; /* Permet de positionner les images enfants relativement à ce conteneur */
+  }
+  
+  .barimage {
+    display: block;
+    width: 95%; /* L'image bar prendra toute la largeur du conteneur */
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  .cocktail-image {
+    position: absolute; /* Permet de positionner cette image par-dessus la bar */
+    top: -60%; /* L'image du cocktail sera déplacée plus haut */
+    right: 10%; /* Toujours à droite avec une petite marge */
+    width: 35%; /* Augmente la largeur de l'image pour la rendre plus grande */
+    object-fit: contain; /* Garde les proportions de l'image */
+    height: auto;
+  }
+  

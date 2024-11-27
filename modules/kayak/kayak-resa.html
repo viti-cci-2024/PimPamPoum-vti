@@ -30,15 +30,31 @@
 				-->
 				<div class="form-group">
 					<label for="ChoixJour">Jour de la sortie</label>
-					<input type="number" class="form-control" id="ChoixJour" placeholder="15" min="1" max="31">
+					<input type="date" class="form-control" id="ChoixJour">
 				</div>
 				<div class="form-group">
 					<label for="ChoixHeureDebut">Heure de début</label>
-					<input type="number" class="form-control" id="ChoixHeureDebut" placeholder="9" min="9" max="15">
+					<select class="form-control" id="ChoixHeureDebut">
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+					</select>
 				</div>
 				<div class="form-group">
 					<label for="ChoixHeureFin">Heure de fin</label>
-					<input type="number" class="form-control" id="ChoixHeureFin" placeholder="10" min="10" max="16">
+					<select class="form-control" id="ChoixHeureDebut">
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+					</select>
 				</div>
 
 
@@ -63,7 +79,7 @@
 		</section>
 		<section class="resa">
 			<a class="btn btn-danger"  role="button" href="./kayak-index.html">Annuler</a>
-			<a class="btn btn-success" role="button" href="#">Réserver</a>
+			<a class="btn btn-success" role="button" href="#" id="rez">Réserver</a>
 		</section>
 
 		<!-- Pied de page -->

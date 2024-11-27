@@ -1,7 +1,8 @@
-.hero-text-bg {
+.bg-primary {
     background: linear-gradient(90deg, #09012bf8, #6460da);
     color:azure;
     padding-block: 0.5em;
+    text-align: center;
 }
 
 .card-img-top {
@@ -9,7 +10,7 @@
     height: 200px; 
     object-fit: cover; 
 }
-
+ 
 .btn-primary {
     background-color: #605BF1;
     border-color: #605BF1; 
@@ -27,15 +28,20 @@
 }
 
 .hero {
-    min-height: 50vh;
+    height: 40ch;
+    background-image: url('../../public/children-1547261_1920.jpg'); 
+    background-size: cover; 
     background-position: center;
+    margin-block-start: 0vh;
 }
-.{
-    position: absolute;
-    z-index: 120;
-    top: 135vh;
-    left:35vh;
-    width: 40%; 
-    height: 60vh; 
-    object-fit: overflow;
+.hero-resa {
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.border-info-subtle {
+    border-color : linear-gradient(90deg, #09012bf8, #6460da);
 }

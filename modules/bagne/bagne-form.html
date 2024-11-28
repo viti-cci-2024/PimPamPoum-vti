@@ -85,85 +85,18 @@
     <menu-top></menu-top>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content text-center">
-            <h1 class="display-4 fw-bold">Réservez votre visite du Bagne</h1>
-            <p class="lead">Découvrez les secrets du passé et vivez une expérience inoubliable.</p>
-        </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section class="container text-center py-5">
-        <h2 class="fw-bold mb-5">Pourquoi choisir cette visite ?</h2>
-        <div class="highlights">
-            <div class="highlight-card">
-                <i class="bi bi-clock-history"></i>
-                <h5>Durée de 90 minutes</h5>
-                <p>Une immersion parfaite dans l'histoire du bagne.</p>
-            </div>
-            <div class="highlight-card">
-                <i class="bi bi-person-badge"></i>
-                <h5>Guide expérimenté</h5>
-                <p>Profitez des explications passionnantes d’un expert.</p>
-            </div>
-            <div class="highlight-card">
-                <i class="bi bi-people"></i>
-                <h5>Groupes de 10 personnes</h5>
-                <p>Une expérience intime et conviviale.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Formulaire de réservation -->
-    <section class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="form-container">
-                    <h2 class="text-center fw-bold mb-4">Réservez votre expérience</h2>
-                    <form action="confirmation.html" method="POST">
-                        <!-- Nom complet -->
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom complet</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom complet" required>
-                        </div>
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Adresse email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
-                        </div>
-                        <!-- Téléphone -->
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Téléphone</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
-                        </div>
-                        <!-- Date de la visite -->
-                        <div class="mb-3">
-                            <label for="date" class="form-label">Date de la visite</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
-                        </div>
-                        <!-- Nombre de personnes -->
-                        <div class="mb-3">
-                            <label for="people" class="form-label">Nombre de personnes</label>
-                            <select class="form-select" id="people" name="people" required>
-                                <option value="" disabled selected>Choisissez</option>
-                                <option value="1">1 personne</option>
-                                <option value="2">2 personnes</option>
-                                <option value="3">3 personnes</option>
-                                <option value="4">4 personnes</option>
-                                <option value="5">5 personnes</option>
-                                <option value="6">6 personnes</option>
-                                <option value="7">7 personnes</option>
-                                <option value="8">8 personnes</option>
-                                <option value="9">9 personnes</option>
-                                <option value="10">10 personnes</option>
-                            </select>
-                        </div>
-                        <!-- Bouton de soumission -->
-                        <div class="text-center">
-                            <button type="submit" class="btn reservation-btn btn-lg">Réserver maintenant</button>
-                        </div>
-                    </form>
-                </div>
+    <section class="hero text-white py-5" style="
+    background: url('./photo/feu.png') no-repeat center center; 
+    background-size: cover; 
+    height: 400px; 
+    display: flex; 
+    align-items: center;">
+        <div class="container">
+            <div class="p-4" style="max-width: 600px;">
+                <h1 class="display-5 fw-bold mb-4 text-white text-start">
+                    Découvrez les secrets du passé, là où l'histoire ne dort jamais.
+                </h1>
+           
             </div>
         </div>
     </section>
@@ -219,6 +152,83 @@
             </div>
         </div>
     </section>
+
+    <!-- Highlights Section -->
+    <section class="container text-center py-5">
+        <h2 class="fw-bold mb-5">Pourquoi choisir cette visite ?</h2>
+        <div class="highlights">
+            <div class="highlight-card">
+                <i class="bi bi-clock-history"></i>
+                <h5>Durée de 90 minutes</h5>
+                <p>Une immersion parfaite dans l'histoire du bagne.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="bi bi-person-badge"></i>
+                <h5>Guide expérimenté</h5>
+                <p>Profitez des explications passionnantes d’un expert.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="bi bi-people"></i>
+                <h5>Groupes de 10 personnes</h5>
+                <p>Une expérience intime et conviviale.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formulaire de réservation -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-container">
+                    <h2 class="text-center fw-bold mb-4">Réservez votre expérience</h2>
+                    <form action="confirmation.html" method="POST">
+                        <!-- Nom complet -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom complet" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <!-- Téléphone -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Téléphone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+                        <!-- Date de la visite -->
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date de la visite</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <!-- Nombre de personnes -->
+                        <div class="mb-3">
+                            <label for="people" class="form-label">Nombre de personnes</label>
+                            <select class="form-select" id="people" name="people" required>
+                                <option value="" disabled selected>Choisissez</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7">7 personnes</option>
+                                <option value="8">8 personnes</option>
+                                <option value="9">9 personnes</option>
+                                <option value="10">10 personnes</option>
+                            </select>
+                        </div>
+                        <!-- Bouton de soumission -->
+                        <div class="text-center">
+                            <button type="submit" class="btn reservation-btn btn-lg">Réserver maintenant</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
         
     </section>

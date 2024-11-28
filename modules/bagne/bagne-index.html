@@ -22,30 +22,81 @@
             margin-top: 0;
             padding-top: 70px; /* Ajustement si la navbar est fixe */
         }
+
+        /* Section de défilement */
+        .scrolling-text-section {
+            position: relative;
+            overflow: hidden;
+            height: 150px; /* Ajuste la hauteur selon tes besoins */
+        }
+
+        /* Conteneur du texte défilant */
+        .scrolling-text-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Texte défilant */
+        .scrolling-text {
+            display: inline-flex;
+            animation: scrollText 10s linear infinite;
+        }
+
+        .scrolling-text span {
+         
+            font-size: 2.5rem; /* Taille du texte */
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Animation du texte */
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Menu principal -->
     <menu-top></menu-top>
 
-	<section class="hero text-white py-5" style="
+    <!-- Section Hero -->
+    <section class="hero text-white py-5" style="
     background: url('./photo/feu.png') no-repeat center center; 
     background-size: cover; 
     height: 400px; 
     display: flex; 
     align-items: center;">
-    <div class="container">
-        <div class="p-4" style= "max-width: 600px;">
-            <h1 class="display-5 fw-bold mb-4 text-white text-start">
-                Découvrez les secrets du passé, là où l'histoire ne dort jamais.
-            </h1>
-            <a href="bagne-form.html" class="btn btn-warning btn-lg fw-bold">Réservez votre visite</a>
+        <div class="container">
+            <div class="p-4" style="max-width: 600px;">
+                <h1 class="display-5 fw-bold mb-4 text-white text-start">
+                    Découvrez les secrets du passé, là où l'histoire ne dort jamais.
+                </h1>
+                <a href="bagne-form.html" class="btn btn-warning btn-lg fw-bold">Réservez votre visite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Défilement de Texte avec fond noir -->
+<section class="scrolling-text-section" style="background: #000; color: #ffffff;">
+    <div class="scrolling-text-wrapper">
+        <div class="scrolling-text">
+            <span>Plongez dans l'histoire </span>
+            <span>Découvrez les vestiges du bagne, </span>
+            <span>Des guides passionnés </span>
+            <span>Réservez dès aujourd'hui </span>
         </div>
     </div>
 </section>
-
-
-
 
 
     <!-- Introduction Section -->
@@ -88,50 +139,26 @@
     </section>
 
     <!-- Réservation Section -->
-    <section class="text-center py-5" style="background: linear-gradient(90deg, #605BF1, #09012B); color: white;">
+    <section class="text-center py-5" style="background: linear-gradient(90deg, #FFEE88, #FFA500); color: #333;">
         <div class="container">
             <h2 class="fw-bold mb-4">Réservez votre visite</h2>
-            <p class="mb-4">
-                Assurez votre place dès aujourd'hui et préparez-vous à une expérience inoubliable.
-            </p>
-            <a href="./reservation-bagne.html" class="btn btn-warning btn-lg">Réserver maintenant</a>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="container py-5">
-        <h2 class="text-center fw-bold mb-5">Ce que nos visiteurs disent</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p class="card-text">
-                            "Un lieu émouvant et riche d'histoire. Merci au guide pour ses explications passionnantes !"
-                        </p>
-                        <p class="text-end fw-bold mb-0">- Marie L.</p>
+            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="fs-5">"Découvrez une histoire émouvante au cœur du bagne."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="fs-5">"Une expérience unique qui restera gravée dans votre mémoire."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="fs-5">"Plongez dans les récits poignants des anciens détenus."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="fs-5">"Un guide expérimenté pour vous accompagner dans ce voyage dans le passé."</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p class="card-text">
-                            "Nous avons été transportés dans le passé. Un moment marquant de notre séjour !"
-                        </p>
-                        <p class="text-end fw-bold mb-0">- Julien D.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p class="card-text">
-                            "Un site exceptionnel, bien conservé et parfaitement expliqué par l'équipe."
-                        </p>
-                        <p class="text-end fw-bold mb-0">- Sophie T.</p>
-                    </div>
-                </div>
-            </div>
+            <a href="bagne-form.html" class="btn btn-dark btn-lg mt-4">Réserver maintenant</a>
         </div>
     </section>
 

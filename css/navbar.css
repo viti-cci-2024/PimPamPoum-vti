@@ -17,3 +17,12 @@ nav {
 .navbar-nav .nav-link:hover {
   color: #FE8A24 !important; /* Couleur des liens au survol */
 }
+
+/* Animation de zoom sur le logo de la navbar */
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}

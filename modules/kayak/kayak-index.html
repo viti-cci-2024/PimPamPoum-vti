@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" media="screen" href="./kayak.css">
         <link rel="icon" type="image/x-icon" href="../../public/logo.ico">
-		<script src="../../js/navbar.js" type="text/javascript" defer></script>
-		<script src="../../js/footer.js" type="text/javascript" defer></script>
+
 	</head>
 	<body>
 		<!-- Menu TOP -->
@@ -77,15 +76,26 @@
 			</div>
 		</section>
 
-		<!-- Réservation -->
-		<section class="resa">
-			<a class="btn" href="./kayak-resa.html" role="button">Page de réservation</a>
-		</section>
 
-		<!-- Pied de page -->
-		<pied-de-page></pied-de-page>
+    <!-- Pied de page -->
+    <pied-de-page></pied-de-page>
 
-		<!-- Script -->
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	</body>
+    <!-- Scripts -->
+    <!-- 1) Bootstrap JS (avec Popper) : nécessaire avant la navbar-top -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <!-- 2) Navbar (noter le chemin relatif depuis /modules/repas ) -->
+    <script src="../../js/navbar-top.js" defer></script>
+
+    <!-- 3) Footer -->
+    <script src="../../js/footer.js" defer></script>
+
+    <!-- 4) script global -->
+    <script src="../../js/main.js" defer></script>
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
 </html>
